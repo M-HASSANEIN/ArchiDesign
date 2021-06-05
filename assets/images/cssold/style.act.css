@@ -1,0 +1,81 @@
+
+
+.header{
+    text-align:center;
+    /*background-color: #333333;*/
+   
+    color:  #999;
+    padding: 0em;
+    
+}
+
+.wrapper{
+    
+   max-width:1500px;
+   margin:auto;
+    
+   
+}   
+
+
+  
+ body{
+    font-family:sans-serif;
+    color:#555;
+    background-color:#ededed;
+  
+	
+ 
+}
+
+
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+ 
+
+    
+    
+  
+h3{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+h2
+{
+    font-family: 'Fjalla One', sans-serif;
+     color:#00748D;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+    
+}
+
+
+p 
+{
+  font-family: 'Nunito Sans', sans-serif;
+    font-size:  18px;
+    color: #414141;
+    line-height: 1.8rem;
+    
+}
+.footer{
+    text-align: center;
+     background-color: #333333;
+    border: thin solid black;
+    color:whitesmoke;
+    padding: 2em;
+    
+}
+
+.logo{
+   max-width: 60px ;
+}
+  
+

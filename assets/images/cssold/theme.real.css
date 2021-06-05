@@ -1,0 +1,260 @@
+.header{
+    background-color:  #00748D;
+    background-image:url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+ 
+
+.container{
+    display: flex;
+     justify-content: space-between;
+    
+}
+
+.accueil{
+   display: flex;
+
+ 
+}
+
+ul li{
+    padding: 20px;
+    list-style:none;
+     font-family: 'Fjalla One', sans-serif; 
+   
+}
+
+li a:hover{
+    background-color:white;
+    color: #00748D ;
+    padding: 12px;
+
+}
+
+
+strong{
+    font-family: 'Fjalla One', sans-serif;
+    padding-left: 10px;
+}
+
+
+
+.hh{
+    
+    padding: 20px;
+    margin-left: 150px;
+}
+.h1{
+ 
+    font-size:  30px;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top:  60px;
+    margin: auto;
+    color:#CB8606;
+    text-transform: uppercase;
+  
+}
+.real{
+    display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+/*****************grid**********************/
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+
+.gallery img{
+    border: 2px solid #00748D;
+    width: 100%;
+   	align-self: stretch;
+	justify-self: stretch;
+	object-fit: cover;
+    
+}
+
+
+.gallery{
+       padding-top: 3rem;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+       grid-gap:10px;
+       margin-bottom: 100px;
+        
+}
+
+.photo4,.photo10,.photo7,.photo14{
+    grid-row: span 2;
+      
+}
+
+/*********************aside**********************************/
+
+aside{
+    width: 30%;
+}
+.temo{
+    padding-top: 70px;
+}
+
+.dernier {
+   padding-top: 2rem; 
+   
+   margin-left: 2rem;
+   padding-bottom: 9rem;
+   
+}
+
+
+ol li:before{
+    content:url(./images/circle.png) ;
+    padding: 10px;
+}
+
+ol li{
+    
+      list-style:none;
+      font-family: 'Nunito Sans', sans-serif;
+      line-height: 2.5em; 
+      font-size:  18px;
+       margin-left: 1rem;
+        text-overflow: ellipsis;
+       overflow: hidden;
+        cursor: help;
+        white-space: nowrap;
+    
+}
+
+
+
+
+
+
+/***************scroll*****************************************/
+
+
+article{
+    padding-top: 8px;
+    width: 100%;
+   margin-left: 2rem;
+}
+
+
+.scroll {
+   
+   
+    overflow-x: hidden;
+      overflow-y: scroll;
+      height: 40rem;
+  
+     
+}
+
+
+
+ cite:before{
+    content: url(./images/client.png);
+    padding: 20px;
+     text-align: left;
+     padding-left: 3rem;
+     
+     
+     
+     
+     
+}
+blockquote p{
+   line-height: 1.5em; 
+   font-family: 'Nunito Sans', sans-serif;
+   font-size:  18px;
+    color: #414141;
+    width: 80%;
+    padding-left:  50px;
+    
+}
+
+em{
+   color: #00748D;
+     font-weight: bold; 
+    
+}
+
+ blockquote:before{
+    content: url(./images/quote.png);
+     float: left;
+    padding-top: 0.5rem;
+     padding-right: 0.2rem; 
+     padding-bottom: 2.5rem;
+    
+     
+}
+
+
+h4{
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #CB8606;
+    width: 40%;
+    margin-left: 9rem;
+}
+
+/********************************footer**************************/
+
+
+.down{
+    margin-left: 950px;
+    padding: 30px;
+}
+
+.foot{
+    background-color:  #00748D;
+    padding: 1px;
+    display: flex;
+   background-image:url(./images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    
+    
+}
+
+
+.fa-facebook-f{
+    color:white;
+    margin-right: 10px;
+    margin-left: 10px;
+  
+}
+
+.fa-instagram  {
+    color:white;
+     margin-right: 10px;
+    margin-left: 10px;
+}
+
+.fa-youtube  {
+    color:white;
+     margin-right: 10px;
+    margin-left: 10px;
+}
+
+.fa-rss  {
+    color:white;
+     margin-right: 10px;
+    margin-left: 10px;
+}
+
+.fa-minus{
+    color: #CB8606;
+     margin-right: 10px;
+    margin-left: 10px;
+}
+
+.koko{
+    
+    padding: 22px;
+    margin-left: 190px;
+    
+}
