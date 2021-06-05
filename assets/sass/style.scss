@@ -1,5 +1,6 @@
         @import "libs/reset.scss";
         @import "libs/responsive.scss";
+        @import "libs/mixins.scss";
         /* *****************************************************************
 GENERAL
 ***************************************************************** */
@@ -13,6 +14,7 @@ GENERAL
             --Fjalla: 'Fjalla One', sans-serif;
         }
         
+        $color:#CB8606;
         html {
             font-size: 63.5%;
         }
@@ -70,9 +72,11 @@ GENERAL
             padding: 10px 80px;
             font-family: var(--Fjalla);
             font-size: 1.8rem;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 background-color: var(--orange);
                 cursor: pointer;
+                @include scale (1.04);
             }
         }
         /* *****************************************************************
@@ -122,11 +126,14 @@ HEADER
                 li {
                     margin: auto;
                     padding: 10px;
+                    transition: all 0.8 ease-out;
                     @media #{$mediasmallmobile} {
                         margin: 20px;
                     }
                     &:hover {
                         background: darken($color: #f9f9f9, $amount: 10);
+                        @include rotate (10deg);
+                        @debug $color;
                     }
                 }
                 a {
@@ -202,7 +209,12 @@ HOME
                 background: var(--orange);
                 color: var(--gris);
                 padding: 20px;
+                transition: all .2s ease-in-out;
                 @extend %shadow;
+                &:hover {
+                    cursor: pointer;
+                    @include scale (1.5);
+                }
             }
             h3 {
                 margin: 30px;
@@ -425,6 +437,11 @@ REALISTION
                 align-self: stretch;
                 justify-self: stretch;
                 object-fit: cover;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    @include scale(1.02);
+                    cursor: pointer;
+                }
             }
             .gallery {
                 display: grid;

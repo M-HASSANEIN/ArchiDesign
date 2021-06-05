@@ -151,10 +151,16 @@ button, .actualite button, .realisation button, .actualite .nos button, .realisa
   padding: 10px 80px;
   font-family: var(--Fjalla);
   font-size: 1.8rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 button:hover, .nos button:hover {
   background-color: var(--orange);
   cursor: pointer;
+  -ms-transform: scale(1.04);
+  -webkit-transition: scale(1.04);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 /* *****************************************************************
@@ -217,6 +223,8 @@ nav ul {
 nav ul li {
   margin: auto;
   padding: 10px;
+  -webkit-transition: all 0.8 ease-out;
+  transition: all 0.8 ease-out;
 }
 @media only screen and (max-width:630px) {
   nav ul li {
@@ -225,6 +233,10 @@ nav ul li {
 }
 nav ul li:hover {
   background: #e0e0e0;
+  -ms-transform: rotate(10deg);
+  -webkit-transition: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 nav ul a, nav ul .nos button a, nav ul .nos .actualite button a, nav ul .nos .realisation button a, .actualite nav ul .nos button a, .realisation nav ul .nos button a, nav ul .actualite .nos button a, nav ul .realisation .nos button a, .nos button nav ul a, .nos .actualite button nav ul a, .nos .realisation button nav ul a, .actualite .nos button nav ul a, .realisation .nos button nav ul a {
   color: var(--gris);
@@ -321,6 +333,15 @@ HOME
   background: var(--orange);
   color: var(--gris);
   padding: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nos .fas:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.5);
+  -webkit-transition: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .nos h3 {
   margin: 30px;
@@ -588,6 +609,15 @@ REALISTION
   justify-self: stretch;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.realisation .gallery img:hover {
+  -ms-transform: scale(1.02);
+  -webkit-transition: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
 }
 .realisation .gallery {
   display: grid;
